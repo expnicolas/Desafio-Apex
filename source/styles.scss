@@ -1,0 +1,152 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+
+    input,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    span {
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .app {
+        margin: auto;
+
+        .content {
+            width: 900px;
+        }
+
+        .header {
+            width: 100%;
+            float: left;
+
+            .btn-include {
+                float: left;
+            }
+        }
+
+        .box-check-in,
+        .box-query {
+            .header-form {
+                background: #343a40;
+                color: #FFF;
+                font-weight: bold;
+                padding: 8px;
+                border-radius: 8px;
+                float: left;
+                width: 100%;
+                margin-top: 30px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+
+                h2 {
+                    margin: 0;
+                }
+
+            }
+
+            .box-form {
+                width: 100%;
+                padding: 10px 25px;
+                margin: 0px;
+                float: left;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border: 1px solid #343a40;
+
+                form {
+                    margin: 0;
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    .first-row,
+                    .secound-row {
+                        width: 100%;
+
+                        .form-group {
+                            width: 50%;
+                            float: left;
+
+                            .form-check {
+                                padding: 15px 25px;
+                            }
+
+                            .form-check-input {
+                                margin-top: 5px;
+                            }
+
+                            .input-date {
+                                overflow: hidden;
+                            }
+
+                            input {
+                                width: 80%;
+                                margin: 0 auto;
+                            }
+
+                            select {
+                                width: 80%;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .page-register {
+        margin: auto;
+
+        .back-index {
+            text-align: left;
+        }
+
+        .box-register {
+            width: 500px;
+            margin-top: 25px;
+
+            .header-register {
+                margin: 0 auto;
+                background: #343a40;
+
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                color: #fff;
+                padding: 8px 0;
+                display: inline-block;
+                width: 100%;
+            }
+
+            .body-register {
+                border-radius: 4px;
+                border: 1px solid #343a40;
+                border-top: none;
+                padding: 20px 40px;
+
+                form {
+                    input {
+                        border-radius: 4px;
+                    }
+
+                    button {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+}
