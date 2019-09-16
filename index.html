@@ -77,7 +77,7 @@
 
             <div class="box-query">
                 <div class="header-form">
-                    <h2>Novo Check in</h2>
+                    <h2>Consultas</h2>
                 </div>
                 <div class="box-form">
                     <form>
@@ -100,7 +100,7 @@
 </body>
 
 <script type="text/javascript">
-    var picker = new Lightpick({
+    let picker = new Lightpick({
         field: document.getElementById('datepicker'),
         singleDate: false,
         lang: 'pt',
@@ -149,19 +149,6 @@
         }
 
         $tbody.insertAdjacentHTML("beforeend", linhatabela.join(""));
-    }
-
-    function checkin() {
-        let data = document.getElementById('datepicker').value;
-        data = data.split("-");
-        var timeDiff = data[1].getTime() - data[0].getTime();
-	    var DaysDiff = timeDiff / (1000 * 3600 * 24);
-        alert(DaysDiff);
-        let nome = document.getElementById('userName').value;
-        let veiculo = document.getElementById('exampleCheck1').value;
-
-        
-        return false;
     }
 
     selectUser();
